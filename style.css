@@ -1,0 +1,46 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "h h"
+        "n n"
+        "as ar"
+        "f f";
+    margin: auto;
+    max-width: 1000px;
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+aside{
+    grid-area: as;
+}
+
+article {
+    grid-area: ar;
+    border: solid rgb(13, 99, 197) 1px;
+    background-color: rgba(0, 100, 250, 0.774);
+    border-radius: 5px;
+}
+
+footer {
+    grid-area: f;
+}
+
+
+@media screen and (max-width:600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+            "n"
+            "as"
+            "ar"
+            "f";
+    }
+}
